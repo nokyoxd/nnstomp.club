@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" onclick="disableMute();" class=" touchevents">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta property="og:title" content="nn$stomp">
+        <meta property="og:description" content="''est. 2015''">
+        <meta name="%Dkeywords%D" content="nnstomp, nn$stomp, nn stomp, nnstomp club, nnstompclub, shiiriko, boowalker, nn$tompclub, nn$tomp club">
+        <meta property="og:image" content="https://nnstomp.club/img/third-trz_50.png">
+        <meta name="theme-color" content="000000">
+        <link rel="icon" href="img/icon-tab.png">
+        <link href="css/main.css" rel="stylesheet">
+        <title>|nn|</title>
+        <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool"></script><script type="text/javascript" src="cursor.js"></script>
+    </head>
+
+    <body>
+        <div class="kill-feed "><div style="display: none;">
+            <span class="player t "></span>
+            <span class="weapons ">
+                <img height="20">
+                <img width="30" height="26" src="./img/headshot.png">
+            </span>
+            <span class="player ct"></span></div>
+        <div style="">
+            <span class="player t ">hoxton</span>
+            <span class="weapons ">
+                <img height="20" src="./img/g3sg1.png">
+                <img width="30" height="26" src="./img/headshot.png">
+            </span>
+            <span class="player ct">nn</span></div><div style="">
+            <span class="player t ">caetrs</span>
+            <span class="weapons ">
+                <img height="20" src="./img/ssg.png">
+                <img width="30" height="26" src="./img/headshot.png">
+            </span>
+            <span class="player ct">nn</span></div>
+        </div>
+
+        <video autoplay="" muted="" loop="" id="myVideo">
+            <source src="vid.mp4" type="video/mp4">
+        </video>
+
+        <center>
+            <div id="clockDisplay" class="clockStyle">10:27:23 pm</div>
+        </center>
+
+        <div id="eny">
+            <a style="color: #FF98A2;">click anywhere for music</a>
+        </div>
+
+        <div id="page">
+            <br>
+
+            <div id="gif">
+                <img src="img/ae.gif" alt="nnstomp">
+            </div>
+
+            <div id="scroll-container">
+                <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><a class="magic-hover magic-hover__square" href="https://steamcommunity.com/profiles/76561198025920265" target="_blank">shiiriko</a> <img src="img/icon.png" width="20" height="20" style="bottom: 20px;"> <a class="magic-hover magic-hover__square" href="http://steamcommunity.com/profiles/76561198025920265" target="_blank">caetrs</a> <img src="img/icon.png" width="20" height="20"> <a class="magic-hover magic-hover__square" href="https://steamcommunity.com/id/b00walk3r" target="_blank">boowalker</a> <img src="img/icon.png" width="20" height="20"> <a class="magic-hover magic-hover__square" href="http://steamcommunity.com/profiles/76561199168839760" target="_blank">kokito</a> <img src="img/icon.png" width="20" height="20"> <a class="magic-hover magic-hover__square" href="http://steamcommunity.com/profiles/76561198946508068" target="_blank">schmuffin</a> <img src="img/icon.png" width="20" height="20"> <a class="magic-hover magic-hover__square" href="http://steamcommunity.com/profiles/76561198125858005" target="_blank">dio</a> <img src="img/icon.png" width="20" height="20"> <a class="magic-hover magic-hover__square" href="https://steamcommunity.com/profiles/76561198106296245" target="_blank">odyssee</a> <img src="img/icon.png" width="20" height="20"> <a class="magic-hover magic-hover__square" href="http://steamcommunity.com/profiles/76561198056952157" target="_blank">jexy</a> <img src="img/icon.png" width="20" height="20"> <a class="magic-hover magic-hover__square" href="https://steamcommunity.com/profiles/76561199184584724" target="_blank">north</a> <img src="img/icon.png" width="20" height="20"> <a class="magic-hover magic-hover__square" href="https://steamcommunity.com/profiles/76561198424423652" target="_blank">esk</a> <img src="img/icon.png" width="20" height="20"> <a class="magic-hover magic-hover__square" href="https://steamcommunity.com/profiles/76561198846235271" target="_blank">cynical</a> <img src="img/icon.png" width="20" height="20"> <a class="magic-hover magic-hover__square" href="https://steamcommunity.com/profiles/76561198312292128" target="_blank">esrie</a> <img src="img/icon.png" width="20" height="20"> <a class="magic-hover magic-hover__square" href="https://steamcommunity.com/profiles/76561198296227663" target="_blank">n0mbyy</a></marquee>
+            </div>
+
+            <input id="volSlider" type="range" min="0" max="1" value="1" step="0.01">
+        </div>
+
+        <script>
+            document.getElementById("volSlider").oninput = function() {
+                var value = (this.value-this.min)/(this.max-this.min)*100
+                this.style.background = 'linear-gradient(to right, #FF98A2 0%, #FF98A2 ' + value + '%, #a55c63 ' + value + '%, #a55c63 100%)'
+            };
+        </script>
+                
+        <script> 
+            var mediaPlayer = document.getElementById('myVideo');
+            document.getElementById('volSlider').addEventListener('change', function(ev){
+                mediaPlayer.volume = ev.target.value
+            });
+        </script> 
+
+        <div id="links">
+            <a href="https://steamcommunity.com/groups/nnstomp" target="_blank" class="magic-hover magic-hover__square">steam</a> &nbsp; &nbsp;  <a href="https://discord.com/invite/8kNaXPXsQe" target="_blank" class="magic-hover magic-hover__square">discord</a>
+        </div>
+
+        <script type="text/javascript">
+            options = {
+            "cursorOuter": "circle-basic",
+            "hoverEffect": "circle-move",
+            "hoverItemMove": false,
+            "defaultCursor": true,
+            "outerWidth": 41,
+            "outerHeight": 41
+            }; 
+            magicMouse(options);
+        </script>
+
+        <script type="text/javascript">
+            function disableF5(e) { if ((e.which || e.keyCode) == 116) e.preventDefault(); };
+            $(document).on("keydown", disableF5);
+        </script>
+
+        <script>
+            window.setTimeout("closeHelpDiv();", 3500);
+            
+            function closeHelpDiv(){
+                document.getElementById("eny2").style.display=" none";
+            }
+        </script>
+
+        <script>
+            window.setTimeout("closeHelpDiv();", 3500);
+
+            function closeHelpDiv(){
+                document.getElementById("eny").style.display=" none";
+            }
+        </script>
+
+        <script>
+            console.log("NNSTOMP ON TOP!");
+            console.log("NNSTOMP ON TOP!");
+            console.log("NNSTOMP ON TOP!");
+            console.log("NNSTOMP ON TOP!");
+            console.log("NNSTOMP ON TOP!");
+            console.log("NNSTOMP ON TOP!");
+            console.log("NNSTOMP ON TOP!");
+            console.log("NNSTOMP ON TOP!");
+            console.log("NNSTOMP ON TOP!");
+            console.log("NNSTOMP ON TOP!");
+            console.log("NNSTOMP ON TOP!");
+            console.log("NNSTOMP ON TOP!");
+            console.log("NNSTOMP ON TOP!");
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani:600" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="event.js"></script>
+        <script type="text/javascript" src="title.js"></script>
+        <script type="text/javascript" src="clock.js"></script>
+        <script type="text/javascript" src="vid.js"></script>
+        <script src="killfeed.js"></script>
+
+    </body>
+</html>

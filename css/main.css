@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+
+html {
+}
+
+body {
+  color: #ffffff;
+	padding: 0;
+	background-color: black;
+	overflow: hidden;
+	font-family: "Brandon Light";
+	color: white;
+	user-select: none;
+}
+
+.kill-feed {
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+.kill-feed>div {
+	padding:px 6px 3px 6px;
+	margin:0;
+	display:inline-block;
+	float:right;
+	clear:both;
+	border:2px #FF98A2 solid;
+	line-height:18px;
+	font-size:15px;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:right;
+	border-radius:4px;
+	background:rgba(0,0,0,0.75);
+	margin-bottom:6px;
+}
+.kill-feed div span {
+	vertical-align:middle;
+}
+.kill-feed div span.weapons>img {
+	border:none;
+	outline:none;
+	vertical-align:middle;
+	margin:0px 3px;
+}
+.kill-feed div>span.player {
+	font-family: 'Rajdhani', sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	margin:0 2px;
+}
+.kill-feed div>span.player.ct {
+	color:#a34c54;
+	padding-left:2px;
+}
+.kill-feed div>span.player.t {
+	color:#FF98A2;
+	padding-right:4px;
+}
+
+#myVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -2;
+	filter: blur(1px) brightness(20%);
+	pointer-events: none;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#links {
+  position: absolute;
+  height: 15px;
+  width: 130px;
+  margin: 10px;
+  right: 10px;
+  bottom: 0;
+  display: flex;
+}
+#eny {
+  opacity: 30%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  top: 20em;
+  vertical-align: middle;
+  width: 100%;
+  font-family: 'Fira Mono', monospace;
+  font-size: 30px;
+}
+
+#links {
+    font-family: 'Fira Mono', monospace;
+    color: white;
+}
+
+#page {
+    display: table;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    top: 10em;
+    vertical-align: middle;
+    width: 100%;
+}
+
+a {
+  font-size: 16px;
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: center;
+  font-family: monospace;
+  display: inline-block;
+  
+  background: linear-gradient(to right, #fc9aa4 20%, #a15d64 40%, #a15d64 60%, #fc9aa4 80%);
+  background-size: 200% auto;
+  
+  color: rgb(0, 0, 0);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 1s linear infinite;
+}
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+marquee {
+  position: fixed;
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+#scroll-container {
+  text-align: center;
+  left: 80px;
+  border: 1px solid #FF98A2;
+  border-radius: 5px;
+  border-top: 0px;
+  border-bottom: 0px;
+  display: inline-block;
+}
+
+#scroll-container2 {
+  text-align: center;
+  left: 20px;
+  margin: 0px 2000px 0px 830px;
+  display: inline-block;
+  position: sticky;
+}
+
+
+a:hover {
+    color: #a8a8a8;
+}
+
+#clockDisplay {
+    position: relative;
+}
+
+
+#scroll-container {
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 1px;
+    height: 10%;
+    width: 25%;
+    overflow: hidden;
+  }
+  
+  #scroll-text {
+    height: 100%;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+p {
+  top: 20px;
+}
+
+.item {
+  height: 80px;
+}
+
+
+
+#volSlider {
+  cursor: default;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  background: linear-gradient(to right, #FF98A2 0%, #FF98A2 50%, #FF98A2 50%, #FF98A2 100%);
+  border: solid 1px #a55c63;
+  border-radius: 8px;
+  height: 6px;
+  margin: auto;
+  top: 50px;
+  right: 220px;
+  margin: auto;
+  accent-color: #a76269;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+  opacity: 60%;
+
+}
+
+
+.clockStyle {
+  color: #FF98A2;
+  left: 20px;
+}
